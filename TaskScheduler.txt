@@ -10,6 +10,6 @@ Yedunath M : learnt how to use git
 Shruti : learn git commands
 Vishnu :Learnt git
 Lakshmi Priya: Learnt angular
-Arunkumar : Learn github
+Arunkumar : Learn githubb
 Kavin Kishore K : Learnt git & github essentials
 priyanka : learnt git
