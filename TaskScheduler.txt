@@ -10,6 +10,7 @@ Shruti : learn git commands
 <<<<<<< HEAD
 =======
 kaviya: learnt angular and git
->>>>>>> d0c53a35f4a6625de5f36a1bfebc34288b024600
+>>>>>>> d0c53a35f4a6625de5f36a1bfebc34288b024600Arunk
 Vishnu :Learnt git
 Lakshmi Priya: Learnt angular
+Arunkumar : Learn github
