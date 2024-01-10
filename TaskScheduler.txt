@@ -7,5 +7,9 @@ Deepaselvi: learnt git and github
 kaviya: learnt angular and git
 Yedunath M : learnt how to use git
 Shruti : learn git commands
+<<<<<<< HEAD
+=======
+kaviya: learnt angular and git
+>>>>>>> d0c53a35f4a6625de5f36a1bfebc34288b024600
 Vishnu :Learnt git
-Arunkumar :learn git
+Lakshmi Priya: Learnt angular
