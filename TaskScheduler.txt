@@ -8,9 +8,11 @@ kaviya: learnt angular and git
 Brintha: learnt git 
 Yedunath M : learnt how to use git
 Shruti : learn git commands
-Vishnu :Learnt git
+Vishnu :Learnt git and Angular
 Lakshmi Priya: Learnt angular
-Arunkumar : Learn githubb
+Gurupriya K : Learnt Angular
+Arunkumar : Learn github
 Kavin Kishore K : Learnt git & github essentials
 priyanka : learnt git
 Kanishka: learn angular
+Guhasaravanan: learnt git
