@@ -8,3 +8,4 @@ kaviya: learnt angular and git
 Yedunath M : learnt how to use git
 Shruti : learn git commands
 Vishnu :Learnt git
+Arunkumar :learn git
