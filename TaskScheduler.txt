@@ -18,3 +18,4 @@ priyanka : learnt git
 Kanishka: learn angular
 Guhasaravanan: learnt git
 Kaviya: learnt git and github
+Gowreesh: Learnt git and Angular
