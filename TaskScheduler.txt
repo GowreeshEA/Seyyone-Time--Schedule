@@ -17,4 +17,4 @@ Kavin Kishore K : Learnt git & github essentials
 priyanka : learnt git
 Kanishka: learn angular
 Guhasaravanan: learnt git
-Kaviya: learnt git
+Kaviya: learnt git and github
