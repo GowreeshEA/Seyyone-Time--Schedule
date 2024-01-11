@@ -2,4 +2,7 @@ Arunagiri K: Learnt git and github essentials
 Priyanga S: Learnt about git and its Work flow
 Guha Saravanan : Learnt Angular
 Dhanabal M : Learnt Angular and Git essentials
+Deepaselvi: learnt git and github
+kaviya: learnt angular and git
 Yedunath M : learnt how to use git
+
