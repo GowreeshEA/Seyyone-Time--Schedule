@@ -13,3 +13,4 @@ Lakshmi Priya: Learnt angular
 Arunkumar : Learn githubb
 Kavin Kishore K : Learnt git & github essentials
 priyanka : learnt git
+Kanishka: learn angular
