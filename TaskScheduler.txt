@@ -4,7 +4,6 @@ Guha Saravanan : Learnt Angular
 Dhanabal M : Learnt Angular and Git essentials
 Kaniga : Learnt Git and github
 Deepaselvi: learnt git and github
-kaviya: learnt angular and git
 Shruti : learn git commands
 Brindha: learnt git 
 Yedunath M : learnt how to use git
