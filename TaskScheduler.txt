@@ -8,3 +8,4 @@ Kaniga : Learnt Git
 Deepaselvi: learnt git and github
 kaviya: learnt angular and git
 >>>>>>> a384a470f96f06b5ac428547e9149ab8820ce2c2
+Shruti : learn git commands
