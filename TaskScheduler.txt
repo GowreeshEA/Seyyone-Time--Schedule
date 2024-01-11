@@ -15,3 +15,4 @@ Vishnu :Learnt git
 Lakshmi Priya: Learnt angular
 Arunkumar : Learn github
 Kavin Kishore K : Learnt git & github essentials
+priyanka : learnt git
