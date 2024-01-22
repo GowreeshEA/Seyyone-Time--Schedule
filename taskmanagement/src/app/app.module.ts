@@ -9,6 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModalModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectComponent } from './project/project.component';
 import { TaskComponent } from './task/task.component';
+import { ChartsComponent } from './charts/charts.component';
+import { ViewtaskComponent } from './viewtask/viewtask.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { TaskComponent } from './task/task.component';
     HomeComponent,
     LoginPageComponent,
     ProjectComponent,
-    TaskComponent
+    TaskComponent,
+    ChartsComponent,
+    ViewtaskComponent
   ],
   imports: [
     NgbModalModule,

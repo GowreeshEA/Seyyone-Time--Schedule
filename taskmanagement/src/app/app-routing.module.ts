@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ProjectComponent } from './project/project.component';
 import { TaskComponent } from './task/task.component';
+import { ChartsComponent } from './charts/charts.component';
+import { ViewtaskComponent } from './viewtask/viewtask.component';
 
 const routes: Routes = [
   // { path: 'users', component: UsersComponent },
@@ -12,6 +14,8 @@ const routes: Routes = [
   // { path: 'teams', component: TeamsComponent },
   { path: '', component: LoginPageComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'charts', component: ChartsComponent },
+  { path: 'viewtask', component: ViewtaskComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
