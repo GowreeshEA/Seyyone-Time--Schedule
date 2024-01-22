@@ -1,7 +1,7 @@
 <header class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Task Management System</a>
-      <button
+      <!-- <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -12,7 +12,7 @@
         (click)="toggleColor()"
       >
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -30,8 +30,26 @@
         </ul>
       </div>
     </div>
+    <div class="card-body">
+      <div class="btn-group">
+        <!-- <button type="button" class="btn btn-primary" (click)="toggleDropdown()">Profile</button> -->
+        <div class="custom-circle" (click)="toggleDropdown()"></div>
+        <span class="circle-letter">P</span>
+
+        <!-- </button> -->
+        <div class="dropdown-menu dropdown-menu-right" [ngClass]="{'show': isDropdownOpen}" (click)="closeDropdown()">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Manage Account</a>
+          <a class="dropdown-item" href="#">ACL</a>
+          <a class="dropdown-item" href="#">Log Out</a>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Profile Button at the End -->
   </header>
   <div class="container mt-4">
     <!-- Your home page content goes here -->
-    <router-outlet></router-outlet>
+    <!-- <router-outlet></router-outlet> -->
   </div>
+  
