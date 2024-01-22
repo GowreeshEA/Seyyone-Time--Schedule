@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import {jsPDF } from 'jspdf'
 
 
 @Component({
@@ -24,11 +25,11 @@ export class ProjectComponent {
 
   constructor(private router: Router) {}
 
-  //makePDF() {
-    //let pdf = new pdf();
-    //pdf.text('Same Report', 25, 10);
-   // pdf.save();
-  //}
+  makePDF() {
+    let pdf = new jsPDF();
+    pdf.text('Same Report', 25, 10);
+   pdf.save();
+  }
 
   toggleForm() {
     this.showForm = !this.showForm;
