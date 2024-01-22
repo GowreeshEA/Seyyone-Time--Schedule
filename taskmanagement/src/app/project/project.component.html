@@ -1,0 +1,138 @@
+<div class="container">
+  <button style="background-color: #3f51b5; color: #fff" (click)="toggleForm()">
+    Create Project
+  </button>
+  <button
+    style="background-color: #ff4081; color: #fff"
+    (click)="navigateToAddTask()"
+  >
+    Add Task
+  </button>
+  <button style="background-color: #ff4081; color: #fff" >
+    Report
+  </button>
+
+  <a routerLink="/charts"
+    ><button
+      style="background-color: #3f51b5; color: #fff"
+      class="charts-button"
+    >
+      Charts
+    </button></a
+  >
+</div>
+
+<div class="table-container">
+  <!-- Add the form with ngIf to conditionally show/hide -->
+  <form *ngIf="showForm">
+    <label for="projectName">Project Name:</label>
+    <input
+      type="text"
+      id="projectName"
+      [(ngModel)]="newProject.projectName"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    />
+
+    <label for="priority">Priority:</label>
+    <select
+      id="priority"
+      [(ngModel)]="newProject.priority"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    >
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+
+    <label for="description">Description:</label>
+    <textarea
+      id="description"
+      [(ngModel)]="newProject.description"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    ></textarea>
+
+    <label for="owner">Owner:</label>
+    <input
+      type="text"
+      id="owner"
+      [(ngModel)]="newProject.owner"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    />
+
+    <label for="teamMembers">Team Members:</label>
+    <input
+      type="text"
+      id="teamMembers"
+      [(ngModel)]="newProject.teamMembers"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    />
+
+    <label for="startDate">Start Date:</label>
+    <input
+      type="date"
+      id="startDate"
+      [(ngModel)]="newProject.startDate"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    />
+
+    <label for="endDate">End Date:</label>
+    <input
+      type="date"
+      id="endDate"
+      [(ngModel)]="newProject.endDate"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    />
+
+    <button
+      type="button"
+      style="background-color: #3f51b5"
+      (click)="createProject()"
+    >
+      Create Project
+    </button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Project ID</th>
+        <th>Project Name</th>
+        <th>Priority</th>
+        <th>Description</th>
+        <th>Owner</th>
+        <th>Team Members</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projects">
+        <td>{{ project.id }}</td>
+        <td>{{ project.projectName }}</td>
+        <td>{{ project.priority }}</td>
+        <td>{{ project.description }}</td>
+        <td>{{ project.owner }}</td>
+        <td>{{ project.teamMembers }}</td>
+        <td>{{ project.startDate }}</td>
+        <td>{{ project.endDate }}</td>
+        <td>{{ project.status }}</td>
+        <td>
+          <a routerLink="/task"><button>View</button></a>
+        </td>
+        <td><button>Edit</button></td>
+        <td><button>Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
