@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Activity Page</title>
+</head>
+<body>
+    <app-home></app-home>
+
+<div class="container">
+    <h1>Login Activity</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>IP Address</th>
+                <th>Location</th>
+                <th>Token</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample data, replace with actual data from your backend -->
+            <tr>
+                <td>user123</td>
+                <td>192.168.0.1</td>
+                <td>New York, USA</td>
+                <td>ABC123XYZ</td>
+                <td><button class="action-btn" (click)="revokeToken('ABC123XYZ')">Revoke Token</button></td>
+            </tr>
+            <tr>
+                <td>john_doe</td>
+                <td>192.168.0.2</td>
+                <td>London, UK</td>
+                <td>DEF456UVW</td>
+                <td><button class="action-btn" (click)="revokeToken('DEF456UVW')">Revoke Token</button></td>
+            </tr>
+            
+            <tr>
+                <td>user123</td>
+                <td>192.168.0.1</td>
+                <td>New York, USA</td>
+                <td>ABC123XYZ</td>
+                <td><button class="action-btn" (click)="revokeToken('ABC123XYZ')">Revoke Token</button></td>
+            </tr>
+            <tr>
+                <td>john_doe</td>
+                <td>192.168.0.2</td>
+                <td>London, UK</td>
+                <td>DEF456UVW</td>
+                <td><button class="action-btn" (click)="revokeToken('DEF456UVW')">Revoke Token</button></td>
+            </tr>
+            <tr>
+                <td>user123</td>
+                <td>192.168.0.1</td>
+                <td>New York, USA</td>
+                <td>ABC123XYZ</td>
+                <td><button class="action-btn" (click)="revokeToken('ABC123XYZ')">Revoke Token</button></td>
+            </tr>
+            <tr>
+                <td>john_doe</td>
+                <td>192.168.0.2</td>
+                <td>London, UK</td>
+                <td>DEF456UVW</td>
+                <td><button class="action-btn" (click)="revokeToken('DEF456UVW')">Revoke Token</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+</body>
+</html>
