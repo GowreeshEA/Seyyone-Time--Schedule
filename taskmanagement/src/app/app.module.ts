@@ -12,12 +12,12 @@ import { TaskComponent } from './task/task.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ViewtaskComponent } from './viewtask/viewtask.component';
 import { AuditComponent } from './Team c/audit/audit.component';
-import { DocumentComponent } from './document/document.component';
-import { TeamsComponent } from './teams/teams.component';
-import { TimetrackerComponent } from './timetracker/timetracker.component';
-import { BoardsComponent } from './boards/boards.component';
-import { ImageuploadComponent } from './imageupload/imageupload.component';
-import { NotificationComponent } from './notification/notification.component';
+import { DocumentComponent } from './Team c/document/document.component';
+import { TeamsComponent } from './Team c/teams/teams.component';
+import { TimetrackerComponent } from './Team c/timetracker/timetracker.component';
+import { BoardsComponent } from './Team c/boards/boards.component';
+import { ImageuploadComponent } from './Team c/imageupload/imageupload.component';
+import { NotificationComponent } from './Team c/notification/notification.component';
 
 @NgModule({
   declarations: [
