@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class TaskComponent {
   task: any = {}; // Initialize an empty object for the task data
 
+  createTask(){
+    alert("Added succesfully");
+  }
   onSubmit() {
     // Add your logic to handle the form submission here
     console.log('Form submitted', this.task);

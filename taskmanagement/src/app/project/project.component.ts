@@ -28,7 +28,7 @@ export class ProjectComponent {
   makePDF() {
     let pdf = new jsPDF();
     pdf.text('Same Report', 25, 10);
-   pdf.save();
+   pdf.save('Project report.pdf');
   }
 
   toggleForm() {

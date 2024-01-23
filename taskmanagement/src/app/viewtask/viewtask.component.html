@@ -1,2 +1,43 @@
+<!-- app.component.html -->
 <app-home></app-home>
-<p>viewtask works!</p>
+
+
+<!-- Table -->
+<div class="task-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Task ID</th>
+        <th>Project ID</th>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Task Type</th>
+        <th>Priority</th>
+        <th>Created By</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Members</th>
+        <th>Status</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of tasks">
+        <td>{{ t.taskId }}</td>
+        <td>{{ t.projectId }}</td>
+        <td>{{ t.userId }}</td>
+        <td>{{ t.name }}</td>
+        <td>{{ t.description }}</td>
+        <td>{{ t.taskType }}</td>
+        <td>{{ t.priority }}</td>
+        <td>{{ t.createdBy }}</td>
+        <td>{{ t.startDate }}</td>
+        <td>{{ t.endDate }}</td>
+        <td>{{ t.members }}</td>
+        <td>{{ t.status }}</td>
+        <td><button>View</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
