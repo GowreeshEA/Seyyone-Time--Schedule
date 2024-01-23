@@ -7,6 +7,7 @@ import { TaskComponent } from './task/task.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ViewtaskComponent } from './viewtask/viewtask.component';
 
+
 const routes: Routes = [
   // { path: 'users', component: UsersComponent },
   { path: 'project', component: ProjectComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'charts', component: ChartsComponent },
   { path: 'viewtask', component: ViewtaskComponent },
+  
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
