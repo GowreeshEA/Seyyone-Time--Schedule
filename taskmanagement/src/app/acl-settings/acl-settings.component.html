@@ -1,0 +1,51 @@
+<!-- acl-settings.component.html -->
+
+<div *ngIf="showAlert" class="alert alert-success" role="alert">
+    Permissions saved successfully!
+  </div>
+  
+  <table class="acl-table table table-striped">
+    <thead>
+      <tr>
+        <th rowspan="4">Role</th>
+        <th rowspan="4">Permission</th>
+        <th colspan="5">Actions</th>
+      </tr>
+      <tr>
+        <th>Create</th>
+        <th>Assign</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let role of roles">
+        <tr>
+          <td rowspan="3"><strong>{{ role }}</strong></td>
+          <td>Teams</td>
+          <td *ngFor="let action of actions">
+            <input type="checkbox"  class="form-check-input" [id]="'action_' + role.toLowerCase() + '_teams_' + action"
+                   (change)="updateRoleActions(role, 'Teams', action, $event)">
+          </td>
+        </tr>
+        <tr>
+          <td>Projects</td>
+          <td *ngFor="let action of actions">
+            <input type="checkbox"  class="form-check-input" [id]="'action_' + role.toLowerCase() + '_projects_' + action"
+                   (change)="updateRoleActions(role, 'Projects', action, $event)">
+          </td>
+        </tr>
+        <tr>
+          <td>Tasks</td>
+          <td *ngFor="let action of actions">
+            <input type="checkbox"  class="form-check-input" [id]="'action_' + role.toLowerCase() + '_tasks_' + action"
+                   (change)="updateRoleActions(role, 'Tasks', action, $event)">
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  
+  <button class="btn btn-success" type="submit"(click)="saveAclData()">Save</button>
+  

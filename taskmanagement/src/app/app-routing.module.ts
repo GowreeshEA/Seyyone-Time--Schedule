@@ -6,7 +6,7 @@ import { ProjectComponent } from './project/project.component';
 import { TaskComponent } from './task/task.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ViewtaskComponent } from './viewtask/viewtask.component';
-
+import { AclSettingsComponent} from './acl-settings/acl-settings.component';
 const routes: Routes = [
   // { path: 'users', component: UsersComponent },
   { path: 'project', component: ProjectComponent },
@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'charts', component: ChartsComponent },
   { path: 'viewtask', component: ViewtaskComponent },
+  { path: 'acl-settings', component: AclSettingsComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

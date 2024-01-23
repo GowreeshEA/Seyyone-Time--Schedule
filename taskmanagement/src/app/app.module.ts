@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +11,7 @@ import { ProjectComponent } from './project/project.component';
 import { TaskComponent } from './task/task.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ViewtaskComponent } from './viewtask/viewtask.component';
+import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +21,20 @@ import { ViewtaskComponent } from './viewtask/viewtask.component';
     ProjectComponent,
     TaskComponent,
     ChartsComponent,
-    ViewtaskComponent
+    ViewtaskComponent,
+    AclSettingsComponent
   ],
   imports: [
     NgbModalModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+ 
+      RouterModule.forRoot([
+      
+        { path: 'home', component: HomeComponent },
+      ])
   ],
   providers: [
     provideClientHydration()
