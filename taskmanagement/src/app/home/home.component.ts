@@ -21,6 +21,11 @@ export class HomeComponent {
     }
   }
 
+  handleBellButtonClick(): void {
+    // Add your logic here for what should happen when the bell button is clicked
+    console.log('Bell button clicked!');
+  }
+
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
   }
