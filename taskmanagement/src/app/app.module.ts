@@ -12,12 +12,8 @@ import { TaskComponent } from './task/task.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ViewtaskComponent } from './viewtask/viewtask.component';
 import { AuditComponent } from './Team c/audit/audit.component';
-import { DocumentComponent } from './document/document.component';
-import { TeamsComponent } from './teams/teams.component';
-import { TimetrackerComponent } from './timetracker/timetracker.component';
-import { BoardsComponent } from './boards/boards.component';
-import { ImageuploadComponent } from './imageupload/imageupload.component';
-import { NotificationComponent } from './notification/notification.component';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -29,19 +25,14 @@ import { NotificationComponent } from './notification/notification.component';
     ChartsComponent,
     ViewtaskComponent,
     AuditComponent,
-    DocumentComponent,
-    TeamsComponent,
-    TimetrackerComponent,
-    BoardsComponent,
-    ImageuploadComponent,
-    NotificationComponent
   ],
   imports: [
     NgbModalModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [
     provideClientHydration()
