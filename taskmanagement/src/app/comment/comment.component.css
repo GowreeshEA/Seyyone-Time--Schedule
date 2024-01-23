@@ -1,0 +1,86 @@
+/* comment.component.css */
+
+div {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .container {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4c6daf;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:#4c6daf;
+  }
+  
+  p {
+    background-color: #f9f9f9;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style for the delete button inside the comment */
+  button.delete-btn {
+    background-color: #ff4444;
+    margin-left: 10px;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  /* comment.component.css */
+
+/* ... your existing styles ... */
+
+.image-upload {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .upload-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-btn:hover {
+    background-color: #2980b9;
+  }
+  

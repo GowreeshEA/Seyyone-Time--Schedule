@@ -19,6 +19,7 @@ import { BoardsComponent } from './Team c/boards/boards.component';
 import { ImageuploadComponent } from './Team c/imageupload/imageupload.component';
 import { NotificationComponent } from './Team c/notification/notification.component';
 import { CommonModule } from '@angular/common';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CommonModule } from '@angular/common';
     TimetrackerComponent,
     BoardsComponent,
     ImageuploadComponent,
-    NotificationComponent
+    NotificationComponent,
+    CommentComponent
   ],
   imports: [
     NgbModalModule,

@@ -6,8 +6,8 @@ import { ProjectComponent } from './project/project.component';
 import { TaskComponent } from './task/task.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ViewtaskComponent } from './viewtask/viewtask.component';
-import { LoginactivityComponent } from './loginactivity/loginactivity.component';
-
+import { CommentComponent } from './comment/comment.component';
+import { FormsModule } from '@angular/forms';
 const routes: Routes = [
   // { path: 'users', component: UsersComponent },
   { path: 'project', component: ProjectComponent },
@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'charts', component: ChartsComponent },
   { path: 'viewtask', component: ViewtaskComponent },
-  {path:'loginactivity', component:LoginactivityComponent}
+  { path: 'comment', component: CommentComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
