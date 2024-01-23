@@ -6,6 +6,7 @@
     <title>Login Activity Page</title>
 </head>
 <body>
+    <app-home></app-home>
 
 <div class="container">
     <h1>Login Activity</h1>
@@ -27,27 +28,49 @@
                 <td>192.168.0.1</td>
                 <td>New York, USA</td>
                 <td>ABC123XYZ</td>
-                <td><button class="action-btn" onclick="revokeToken('ABC123XYZ')">Revoke Token</button></td>
+                <td><button class="action-btn" (click)="revokeToken('ABC123XYZ')">Revoke Token</button></td>
             </tr>
             <tr>
                 <td>john_doe</td>
                 <td>192.168.0.2</td>
                 <td>London, UK</td>
                 <td>DEF456UVW</td>
-                <td><button class="action-btn" onclick="revokeToken('DEF456UVW')">Revoke Token</button></td>
+                <td><button class="action-btn" (click)="revokeToken('DEF456UVW')">Revoke Token</button></td>
             </tr>
-            <!-- Add more rows as needed -->
+            
+            <tr>
+                <td>user123</td>
+                <td>192.168.0.1</td>
+                <td>New York, USA</td>
+                <td>ABC123XYZ</td>
+                <td><button class="action-btn" (click)="revokeToken('ABC123XYZ')">Revoke Token</button></td>
+            </tr>
+            <tr>
+                <td>john_doe</td>
+                <td>192.168.0.2</td>
+                <td>London, UK</td>
+                <td>DEF456UVW</td>
+                <td><button class="action-btn" (click)="revokeToken('DEF456UVW')">Revoke Token</button></td>
+            </tr>
+            <tr>
+                <td>user123</td>
+                <td>192.168.0.1</td>
+                <td>New York, USA</td>
+                <td>ABC123XYZ</td>
+                <td><button class="action-btn" (click)="revokeToken('ABC123XYZ')">Revoke Token</button></td>
+            </tr>
+            <tr>
+                <td>john_doe</td>
+                <td>192.168.0.2</td>
+                <td>London, UK</td>
+                <td>DEF456UVW</td>
+                <td><button class="action-btn" (click)="revokeToken('DEF456UVW')">Revoke Token</button></td>
+            </tr>
         </tbody>
     </table>
 </div>
 
-<script>
-    function revokeToken(token) {
-        // Add logic to revoke the token (you can make an API call to the server here)
-        alert('Token ' + token + ' revoked!');
-        // You may also want to update the UI to reflect the revoked status
-    }
-</script>
+
 
 </body>
 </html>
