@@ -24,6 +24,7 @@ import { ImageuploadComponent } from './Team c/imageupload/imageupload.component
 import { NotificationComponent } from './Team c/notification/notification.component';
 import { CommonModule } from '@angular/common';
 import { CommentComponent } from './comment/comment.component';
+import { RoleComponent } from './role/role.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { CommentComponent } from './comment/comment.component';
     BoardsComponent,
     ImageuploadComponent,
     NotificationComponent,
-    CommentComponent
+    CommentComponent,
+    RoleComponent
 
   ],
   imports: [

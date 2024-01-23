@@ -1,0 +1,52 @@
+
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .role-section {
+    margin-bottom: 20px;
+    
+  }
+  
+  /* Increase the size of the dropdown and input */
+  .form-control-lg {
+    font-size: 1.25rem;
+   
+  }
+  
+  /* Make the headings larger */
+  .heading-lg {
+    font-size: 1.5rem;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #007BFF;
+    color: white;
+  }
+  label
+{
+    display: block;
+    margin-bottom: 5px;
+}
+  /* Style the checkbox */
+  input[type="checkbox"]
+   {
+    color: #007BFF;
+  }
+  

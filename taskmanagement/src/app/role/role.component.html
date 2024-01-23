@@ -1,0 +1,45 @@
+
+<!-- src/app/role-management/role-management.component.html -->
+
+<div class="container mt-4">
+  
+    <h2 class="section-title">Role Information</h2>
+    <div class="form-group role-section">
+      <label for="role" class="heading-lg">Role:</label>
+      <select class="form-control form-control-lg" id="role" name="role" [(ngModel)]="selectedRole" required>
+        <option *ngFor="let role of roles" [value]="role">{{ role }}</option>
+      </select>
+  
+      <label for="roleDescription" class="mt-4 heading-lg">Role Description:</label>
+      <input class="form-control form-control-lg" id="roleDescription" name="roleDescription" [value]="roleDescriptions[selectedRole]" readonly>
+    </div>
+  
+    <h2 class="section-title mt-4">ACL Table</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Permission</th>
+          <th>Create</th>
+          <th>Assign</th>
+          <th>Edit</th>
+          <th>Delete</th>
+          <th>View</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="selectedRole">
+        <tr>
+          <td [attr.rowspan]="permissions.length + 1">{{ selectedRole }}</td>
+        </tr>
+        <tr *ngFor="let permission of permissions">
+          <td>{{ permission }}</td>
+          <td><input class="form-check-input" type="checkbox" [checked]="getAclForSelectedRole()[permission].includes('create') ? true : false" disabled></td>
+          <td><input class="form-check-input" type="checkbox" [checked]="getAclForSelectedRole()[permission].includes('assign') ? true : false" disabled></td>
+          <td><input class="form-check-input" type="checkbox" [checked]="getAclForSelectedRole()[permission].includes('edit') ? true : false" disabled></td>
+          <td><input class="form-check-input" type="checkbox" [checked]="getAclForSelectedRole()[permission].includes('delete') ? true : false" disabled></td>
+          <td><input class="form-check-input" type="checkbox" [checked]="getAclForSelectedRole()[permission].includes('view') ? true : false" disabled></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -8,6 +8,8 @@ import { ChartsComponent } from './charts/charts.component';
 import { ViewtaskComponent } from './viewtask/viewtask.component';
 import { AclSettingsComponent} from './acl-settings/acl-settings.component';
 import { CommentComponent } from './comment/comment.component';
+import { RoleComponent } from './role/role.component';
+
 import { FormsModule } from '@angular/forms';
 const routes: Routes = [
   // { path: 'users', component: UsersComponent },
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: 'acl-settings', component: AclSettingsComponent },
 
   { path: 'comment', component: CommentComponent },
+  { path: 'role', component: RoleComponent }
 
 ];
 @NgModule({
