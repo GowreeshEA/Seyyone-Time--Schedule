@@ -1,6 +1,6 @@
 <header class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Task Management System</a>
+    <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active" >Task Management System</a>
     <!-- <button
         class="navbar-toggler"
         type="button"
@@ -62,7 +62,8 @@
         [ngClass]="{ show: isDropdownOpen }"
         (click)="closeDropdown()"
       >
-        <a class="dropdown-item" href="#">Profile</a>
+        <a class="dropdown-item" href="/home">Profile</a>
+        <a class="dropdown-item" href="">Login Activity</a>
         <a class="dropdown-item" href="#">Manage Account</a>
         <a class="dropdown-item" href="#">ACL</a>
         <a class="dropdown-item" href="#">Log Out</a>
