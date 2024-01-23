@@ -7,12 +7,20 @@ import { HomeComponent } from './home/home.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModalModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProjectComponent } from './project/project.component';
+import { TaskComponent } from './task/task.component';
+import { ChartsComponent } from './charts/charts.component';
+import { ViewtaskComponent } from './viewtask/viewtask.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    ProjectComponent,
+    TaskComponent,
+    ChartsComponent,
+    ViewtaskComponent
   ],
   imports: [
     NgbModalModule,
